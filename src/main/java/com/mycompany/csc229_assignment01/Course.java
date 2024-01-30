@@ -37,10 +37,11 @@ public class Course {
     private String name;
     private String code;
 
+    // Constructors
     public Course() {
-        ID = 12012;
-        name = "Moaath";
-        code = "CSC229";
+        ID = 0;
+        name = " ";
+        code = " ";
     }
 
     public Course(int ID, String name, String code) {
@@ -49,6 +50,7 @@ public class Course {
         this.code = code;
     }
 
+    // Getters and Setters
     public int getID() {
         return ID;
     }

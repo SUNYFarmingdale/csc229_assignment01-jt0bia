@@ -15,40 +15,32 @@ public class CourseTest {
     
     Course crs;
     public CourseTest() {
-        crs= new Course();
+        crs = new Course();
     }
 
-    //Test setter
+    //Testing Getters and Setters
     @Test
     public void testSomeMethod1() {
-        crs.setName("Moaath");
-        crs.setCode("CSC229");
-        crs.setID(12012);
-        
+        crs.setName("Jared");
+        assertEquals("Jared", crs.getName());
     }
     
-    //Test setter
-        @Test
+    @Test
     public void testSomeMethod2() {
-            assertEquals("Moaath", crs.getName());
-    }
-    
-        @Test
-    public void testSomeMethod3() {
+        crs.setCode("CSC229");
         assertEquals("CSC229", crs.getCode());
     }
     
-        @Test
+    @Test
+    public void testSomeMethod3() {
+        crs.setID(101);
+        assertEquals(101, crs.getID());
+    }
+    
+    @Test
     public void testSomeMethod4() {
-        assertEquals(12012, crs.getID());
+        Course cr2 = new Course(101, "Jared", "CSC229");
+        assertNotNull(cr2);
     }
-    
-        @Test
-    public void testSomeMethod5() {
-        Course cr2= new Course(12012, "Moaath", "CSC229");
-        
-            assertNotNull(cr2);
-    }
-    
-    
+
 }

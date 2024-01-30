@@ -3,15 +3,19 @@ package com.mycompany.csc229_assignment01;
 
 /**
  *
- * @author MoaathAlrajab
+ * @author JaredTobias
  */
 public class NewClass {
     
      public static void main(String[] args) {
-        Course crs = new Course();
-        crs.setID(101);
-        crs.setName("Jared");
-        crs.setCode("CSC229");
+
+         // Instantiating Course class
+         Course crs = new Course(101, "Jared", "CSC229");
+
+         // Printing ID, name and code
+         System.out.println(crs.getID());
+         System.out.println(crs.getName());
+         System.out.println(crs.getCode());
     }
     
 }
