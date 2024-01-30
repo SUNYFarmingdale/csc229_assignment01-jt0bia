@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author MoaathAlrajab
+ * @author JaredTobias
  */
 public class CourseTest {
     

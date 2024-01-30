@@ -8,7 +8,10 @@ package com.mycompany.csc229_assignment01;
 public class NewClass {
     
      public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Course crs = new Course();
+        crs.setID(101);
+        crs.setName("Jared");
+        crs.setCode("CSC229");
     }
     
 }

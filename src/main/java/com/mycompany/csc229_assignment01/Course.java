@@ -30,8 +30,46 @@ package com.mycompany.csc229_assignment01;
 
 /**
  *
- * @author MoaathAlrajab
+ * @author JaredTobias
  */
 public class Course {
+    private int ID;
+    private String name;
+    private String code;
 
+    public Course() {
+        ID = 12012;
+        name = "Moaath";
+        code = "CSC229";
+    }
+
+    public Course(int ID, String name, String code) {
+        this.ID = ID;
+        this.name = name;
+        this.code = code;
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
 }
